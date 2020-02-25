@@ -7,15 +7,15 @@ import javax.swing.*;
  *
  * @author MC03353
  */
-public class multiplePanels extends JFrame {
+public class MultiplePanelsEx extends JFrame {
     
-    multiplePanels(){
-    JFrame f = new JFrame("Border Layout");
+    public static void multiplePanelsEx(){
+    JFrame frame = new JFrame("Border Layout");
     
-      // -------------------------------------------------------
-      // Make Panel with 5 button 
-      // -------------------------------------------------------
-    f.setLayout(new BorderLayout());
+    // -------------------------------------------------------
+    // Make Panel with 5 button 
+    // -------------------------------------------------------
+    frame.setLayout(new BorderLayout());
     
     JPanel northPanel = new JPanel();    
     JPanel eastPanel = new JPanel();    
@@ -41,7 +41,7 @@ public class multiplePanels extends JFrame {
     northPanel.add(x4, "West");
     northPanel.add(x5, "Center");
 
-    f.getContentPane().add(northPanel, "North");   // Add MyPanel1 to North
+    frame.getContentPane().add(northPanel, "North");   // Add MyPanel1 to North
 
     // -----------------------------------------------------------
     // Make another Panel with 5 button 
@@ -62,10 +62,10 @@ public class multiplePanels extends JFrame {
     MyPanel2.add(x9, "West");
     MyPanel2.add(x10, "Center");
 
-//     f.getContentPane().add(MyPanel2, "South");   // Paste MyPanel2 to South
-    f.getContentPane().add(MyPanel2, "Center");  // Paste MyPanel2 to Center
+    frame.getContentPane().add(MyPanel2, "South");   // Paste MyPanel2 to South
+//    frame.getContentPane().add(MyPanel2, "Center");  // Paste MyPanel2 to Center
 
-      f.setSize(400, 300);
-      f.setVisible(true);
+      frame.setSize(400, 300);
+      frame.setVisible(true);
     }
 }

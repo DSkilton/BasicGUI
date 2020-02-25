@@ -16,9 +16,16 @@ public class GuiExamples {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+//        gridBagLayout();
+//        BorderLayoutEx.borderLayout();
+        MultiplePanelsEx.multiplePanelsEx();
+
         
-        try{
+        
+    }
+    
+    public static void gridBagLayout(){//still working on this 
+            try{
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e){
             e.printStackTrace();
@@ -30,8 +37,5 @@ public class GuiExamples {
                 new GridBagLayoutEx().setVisible(true);
             }
         });
-        
-        
     }
-    
 }
